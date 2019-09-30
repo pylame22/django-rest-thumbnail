@@ -1,0 +1,3 @@
+django-cleanup
+sorl-thumbnail
+# Additional requirements go here
