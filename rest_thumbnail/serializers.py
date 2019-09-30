@@ -5,7 +5,7 @@ from sorl.thumbnail import get_thumbnail
 from . import settings
 
 
-class DynamicThumbnailField(serializers.ImageField):
+class ThumbnailField(serializers.ImageField):
     def __init__(self, *args, **kwargs):
         self.size = kwargs.pop('size', settings.DEFAULT_SIZE)
         super().__init__(*args, **kwargs)

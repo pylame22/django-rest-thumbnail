@@ -4,7 +4,7 @@ from sorl.thumbnail import get_thumbnail
 from django.conf import settings as app_settings
 
 
-class DynamicImageField(models.ImageField):
+class ThumbnailImageField(models.ImageField):
     def __init__(self, *args, **kwargs):
         self.sizes = kwargs.pop('sizes', None)
         super().__init__(*args, **kwargs)
